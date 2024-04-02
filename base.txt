@@ -1,0 +1,65 @@
+Channels:
+
+- channel_id: id do canal
+- channel_name: nome do canal onde foi feito o pedido
+- channel_type: tipo do canal
+
+nao acho que o nome seja importante
+
+Deliveries:
+
+-delivery_id: id da entrega
+-delivery_order_id: id do pedido
+-driver_id: id do motorista
+-delivery_distance_meters: distancia do pedido
+-delivery_status: se foi entregado ou não
+
+na coluna delivery_status, tirar os pedidos que foram cancelados que foram poucos e o tempo pode zuar o modelo
+
+Drivers:
+
+-driver_id: id do motorista
+-driver_modal: modal de motorista (moto, bicicleta, etc)
+-driver_type: tipo do motorista
+
+talvez o driver_type mude a velocidade do tempo de entrega
+
+Hub:
+
+-hub_id: id do hub
+-hub_name: nome do hub
+-hub_city: cidade do hub
+-hub_state: estado do hub
+-hub_latitude: latitude do hub
+-hub_longitude: longitude do hub
+
+talvez a cidade ou o estado afete, analisar apenas um ou o outro -> 4 cidades de 4 estados diferentes
+acho que longitude e latitude possam ser descartados, necessário analisar
+
+Orders:
+
+-order_id: id do pedido
+-store_id: id da loja
+-channel_id: id do canal
+-payment_order_id: id do pagamento do pedido
+-delivery_order_id: id do pedido
+-order_status: se pedido foi completado ou nao
+-order_amount: quantidade de pedidos
+-order_delivery_fee: taxa do pedido
+-order_delivery_cost: preco do pedido
+-order_created_hour: hora do pedido
+-order_created_minute: minuto do pedido
+-order_created_day: dia do pedido
+-order_created_month: mes do pedido
+-order_created_year: ano do pedido
+-order_moment_created: momento que o pedido foi aceito
+-order_moment_accepted: momento que o pedido foi aceito
+-order_moment_ready: momento que o pedido estava pronto
+-order_moment_collected: momento que o pedido estava sendo coletado
+-order_moment_in_expedition: momento que o pedido estava no expedição
+-order_moment_delivering: momento que o pedido estava no caminho
+-order_moment_delivered: momento que o pedido foi entregue
+-order_moment_finished: momento que o pedido foi acabado
+-order_metric: métricas de quanto tempo cada etapa
+
+analisar como o tempo afeta isso, eu acho que as colunas moment serão mais faceis de usar
