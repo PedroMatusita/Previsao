@@ -1,5 +1,6 @@
 Channels:
 
+
 - channel_id: id do canal
 - channel_name: nome do canal onde foi feito o pedido
 - channel_type: tipo do canal
